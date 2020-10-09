@@ -1,0 +1,12 @@
+*.suo
+/MomemtoTest/obj/
+/Momemto/obj/
+*.testlog
+/MomemtoTest/bin/
+/Momemto/bin/
+*.cs-template
+*.ts-template
+*.vb-template
+*.manifest
+/.vscode/solution-explorer/template-list.json
+template-parameters.js
