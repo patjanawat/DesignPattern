@@ -8,12 +8,12 @@ namespace State
     {
         public void MouseDown()
         {
-            Console.WriteLine("MouseDown");
+            Console.WriteLine("Select Erase Icon");
         }
 
         public void MouseUp()
         {
-            Console.WriteLine("MouseUp");
+            Console.WriteLine("Delete somthing");
 
         }
     }

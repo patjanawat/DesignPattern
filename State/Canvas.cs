@@ -7,7 +7,7 @@ namespace State
     public class Canvas:ITool
     {
         private readonly ITool _tool;
-
+        
         public Canvas(ITool tool)
         {
             _tool = tool;

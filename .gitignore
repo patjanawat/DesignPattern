@@ -11,3 +11,6 @@
 /.vscode/solution-explorer/template-list.json
 template-parameters.js
 State/obj/
+State/bin/
+StateTest/bin/
+StateTest/obj/
