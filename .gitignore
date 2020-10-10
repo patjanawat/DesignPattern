@@ -10,3 +10,4 @@
 *.manifest
 /.vscode/solution-explorer/template-list.json
 template-parameters.js
+State/obj/
