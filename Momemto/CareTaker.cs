@@ -9,7 +9,7 @@ namespace Momemto
             _histories = new List<EditorState<T>>();
             lastIndex = -1;
         }
-        private readonly IList<EditorState<T>> _histories;
+        private IList<EditorState<T>> _histories;
         private int lastIndex;
 
         public void PushState(EditorState<T> state){
@@ -23,11 +23,17 @@ namespace Momemto
         }
 
         public EditorState<T> Undo(){
-            return _histories[lastIndex--];
+            return _histories[--lastIndex];
         }
 
         public EditorState<T> Redo(){
             return _histories[++lastIndex];
+        }
+
+        public void Reset()
+        {
+            _histories = new List<EditorState<T>>();
+            lastIndex = -1;
         }
 
         public int Index => lastIndex;
